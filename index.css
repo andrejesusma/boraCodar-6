@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+body {
+  background: linear-gradient(to bottom, #8257e5 0%, #271a45 100%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+#container {
+  height: 656px;
+  width: 330px;
+
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-between;
+}
+h3 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: -20px;
+}
+#card {
+  height: 82%;
+  width: 100%;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+
+  overflow: hidden;
+}
+span {
+  font-size: 14px;
+  text-align: center;
+  width: 74%;
+  line-height: 1.8;
+  font-weight: 300;
+  opacity: 0.7;
+  margin-top: -10px;
+}
+#box {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px 32px;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.one {
+  height: 190px;
+  border-bottom: 1px dashed #adadad;
+}
+.one div:last-child {
+  align-items: center;
+}
+.one div:last-child div p {
+  font-weight: normal;
+  opacity: 0.7;
+}
+#balls {
+  position: absolute;
+  width: 360px;
+  margin-top: 173px;
+  display: none;
+  justify-content: space-between;
+}
+#balls:nth-of-type(2) {
+  margin-top: 258px;
+}
+#ball {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #543893 0%, #563a98 100%);
+}
+.b-2 #ball {
+  background: linear-gradient(to bottom, #6845b7 0%, #5a3c9e 100%);
+}
+.two {
+  height: 85px;
+  border-bottom: 1px dashed #adadad;
+}
+.two div {
+  margin-top: -3px;
+}
+.three {
+  height: 270px;
+}
+#b-box {
+  display: flex;
+  justify-content: space-between;
+}
+#b-box div:last-child {
+  text-align: right;
+}
+img {
+  width: 80%;
+  margin-right: -6px;
+  margin-bottom: 6px;
+}
+.three #b-box .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 160px;
+  margin-top: 5px;
+}
+.three #b-box .text div {
+  text-align: left;
+}
+.qrcode {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: end;
+  margin-bottom: 5px;
+}
+#r-qr {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+#box:last-child {
+  place-items: center;
+}
+.rodape {
+  margin-bottom: -10px;
+}
+.destaque {
+  padding: 5px;
+  font-size: 16px;
+  background-color: #633bbc;
+  color: white;
+
+  border-radius: 5px;
+  text-align: center;
+}
+p {
+  font-weight: bold;
+  text-align: top;
+}
+i {
+  font-size: 10px;
+  float: right;
+}
+@media (min-width: 508px) {
+  #balls {
+    display: flex;
+  }
+}
